@@ -1,6 +1,5 @@
-
 import Sidebar from "../components/dashboard/Sidebar";
-import TopNav from "../components/dashboard/TopNav"
+import TopNav from "../components/dashboard/TopNav";
 import StatsCards from "../components/dashboard/StatsCards";
 import ActivityChart from "../components/dashboard/ActivityChart";
 import TopProducts from "../components/dashboard/TopProducts";
@@ -8,31 +7,23 @@ import AddUser from "../components/dashboard/AddUser";
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
-      {/* <Sidebar /> */}
-
-      {/* Main Content */}
-      <div className="flex-1 p-6">
-        {/* Top Navigation */}
+    <div className="flex">
+      <div className="flex-1 p-3">
         <TopNav />
 
         {/* Stats Cards */}
         <StatsCards />
 
-        {/* Charts & User Management */}
-        <div className="grid grid-cols-3 gap-4">
-      
-          <div className="col-span-2">
-            <ActivityChart />
-          </div>
+        {/* Activity Chart */}
+        <div className="w-full mb-4">
+          <ActivityChart />
+        </div>
 
-          {/* Top Products */}
+        {/* Top Products & Add User Side by Side */}
+        <div className="grid grid-cols-2 gap-4">
           <div>
             <TopProducts />
           </div>
-
-          {/* Add User */}
           <div>
             <AddUser />
           </div>

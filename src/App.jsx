@@ -1,27 +1,14 @@
-import React from 'react'
-import AppRouter from './AppRouter'
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import AppRouter from "./AppRouter";
 
 const App = () => {
   return (
-    <div>
-     <AppRouter />
+    <div className="min-h-screen bg-transparent backdrop-blur-lg">
+      <ToastContainer />
+      <AppRouter />
     </div>
-  )
-}
+  );
+};
 
-export default App
-
-// import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
-
-// export default function App() {
-//   return (
-//     <header>
-//       <SignedOut>
-//         <SignInButton />
-//       </SignedOut>
-//       <SignedIn>
-//         <UserButton />
-//       </SignedIn>
-//     </header>
-// //   );
-// }
+export default App;

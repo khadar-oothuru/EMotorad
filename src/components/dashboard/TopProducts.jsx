@@ -9,17 +9,42 @@ const TopProducts = () => {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow-md">
-      <h3 className="text-lg font-bold">Top Products</h3>
-      <ResponsiveContainer width="100%" height={250}>
-        <PieChart>
-          <Pie data={productsData} dataKey="value" nameKey="name" outerRadius={80}>
-            {productsData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={entry.color} />
-            ))}
-          </Pie>
-        </PieChart>
-      </ResponsiveContainer>
+    <div className="p-10 rounded-2xl shadow-lg bg-transparent max-w-md mx-auto flex flex-col">
+      <h3 className="text-lg font-semibold text-gray-800 mb-3">Top Products</h3>
+      <div className="flex items-center">
+        {/* Donut Chart */}
+        <ResponsiveContainer width={120} height={120}>
+          <PieChart>
+            <Pie
+              data={productsData}
+              dataKey="value"
+              nameKey="name"
+              outerRadius={50}
+              innerRadius={30}
+              paddingAngle={5}
+              stroke="none"
+            >
+              {productsData.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
+        
+        {/* Legend */}
+        <div className="ml-6 space-y-2">
+          {productsData.map((product, index) => (
+            <div key={index} className="flex items-center space-x-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: product.color }}
+              ></div>
+              <span className="text-gray-800 font-medium">{product.name}</span>
+              <span className="text-gray-600 text-sm">{product.value}%</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
