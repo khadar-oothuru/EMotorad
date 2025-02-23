@@ -73,7 +73,7 @@ console.log(backendUrl);
       login(token, rememberMe);
       toast.success("Google authentication successful! Redirecting...", {
         position: "top-right",
-        autoClose: 2000,
+        // autoClose: 2000,
         onClose: () => navigate("/"),
       });
     }
