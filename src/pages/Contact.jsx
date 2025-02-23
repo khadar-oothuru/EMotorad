@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -89,8 +89,7 @@ const Contact = () => {
         </div>
       </form>
 
-      {/* Toast Notification Container */}
-      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={true} />
+
     </div>
   );
 };
