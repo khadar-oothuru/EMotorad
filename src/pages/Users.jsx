@@ -61,12 +61,12 @@ const Users = () => {
       <h2 className="text-2xl font-bold text-gray-800 mb-4">Users</h2>
       <p className="text-gray-600 mb-6">Manage user accounts and permissions.</p>
 
-      <div className="mt-6 space-y-4">
+      <div className="mt-6 mb-6 space-y-4">
         <ul>
           {users.map((user) => (
             <li
               key={user._id}
-              className="flex justify-between items-center p-4 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-200 ease-in-out"
+              className="flex justify-between items-center mb-6 p-4 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-200 ease-in-out"
             >
               <div>
                 <h3 className="text-lg font-semibold text-gray-800">{user.name}</h3>

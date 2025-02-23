@@ -12,9 +12,11 @@ import {
   Menu,
 } from "lucide-react";
 import { FaBicycle } from "react-icons/fa";
+import { useUser } from "../../context/UserContext"
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const { logout, user } = useUser();
 
   return (
     <div
@@ -48,12 +50,15 @@ const Sidebar = () => {
         <SidebarItem to="/help" icon={<HelpCircle size={20} className="text-cyan-400" />} text="Help" isOpen={isOpen} shadowColor="shadow-cyan-400" />
         <SidebarItem to="/contact" icon={<Phone size={20} className="text-pink-400" />} text="Contact" isOpen={isOpen} shadowColor="shadow-pink-400" />
         <button
-          onClick={() => console.log("Logout clicked")}
-          className="flex items-center space-x-3 w-full p-3 rounded-lg cursor-pointer transition-all duration-300 bg-red-400 hover:bg-red-500 text-white shadow-md"
-        >
-          <LogOut size={20} className="text-white" />
-          {isOpen && <span className="font-medium">Logout</span>}
-        </button>
+      onClick={() => {
+        logout();
+        console.log("Logged out");
+      }}
+      className="flex items-center space-x-3 w-full p-3 rounded-lg cursor-pointer transition-all duration-300 bg-red-400 hover:bg-red-500 text-white shadow-md"
+    >
+      <LogOut size={20} className="text-white" />
+      {user && <span className="font-medium">Logout</span>}
+    </button>
       </div>
     </div>
   );
