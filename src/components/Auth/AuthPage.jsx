@@ -20,7 +20,9 @@ const AuthPage = () => {
   }, [user, navigate]);
 
 // const backendUrl = import.meta.env.VITE_Backend_URL || "http://localhost:5000";
-const backendUrl = "http://localhost:5000";
+// const backendUrl = "http://localhost:5000";
+const backendUrl = import.meta.env.VITE_Backend_URL
+
 console.log(backendUrl);
 
 
