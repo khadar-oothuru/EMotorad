@@ -46,7 +46,7 @@ console.log(backendUrl);
         localStorage.setItem("authToken", response.data.token);
         toast.success("Authentication successful! Redirecting...", {
           position: "top-right",
-          autoClose: 2000,
+          
           onClose: () => navigate("/"),
         });
       }
