@@ -86,11 +86,11 @@ console.log(backendUrl);
         <div className="w-1/2 bg-gradient-to-r from-purple-400 to-indigo-500 flex flex-col items-center justify-center text-white p-10 rounded-l-2xl">
           <FaBicycle className="text-5xl mb-4 animate-bounce" />
           <h1 className="text-4xl font-bold">EMotorad</h1>
-          <div className="flex mt-6 space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub className="text-2xl text-black hover:scale-110 transition-transform" /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter className="text-2xl text-black hover:scale-110 transition-transform" /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-2xl text-black hover:scale-110 transition-transform" /></a>
-            <a href="https://discord.com" target="_blank" rel="noopener noreferrer"><FaDiscord className="text-2xl text-black hover:scale-110 transition-transform" /></a>
+          <div className="flex mt-60 space-x-7">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub className="text-2xl text-white hover:scale-110 transition-transform" /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter className="text-2xl text-white  hover:scale-110 transition-transform" /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-2xl text-white  hover:scale-110 transition-transform" /></a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer"><FaDiscord className="text-2xl text-white  hover:scale-110 transition-transform" /></a>
           </div>
         </div>
         <div className="w-1/2 p-10 flex flex-col justify-center">
