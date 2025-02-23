@@ -20,6 +20,7 @@ const AuthPage = () => {
   }, [user, navigate]);
 
 const backendUrl = import.meta.env.VITE_Backend_URL || "http://localhost:5000";
+console.log(backendUrl);
 
 
   const validateForm = () => {
