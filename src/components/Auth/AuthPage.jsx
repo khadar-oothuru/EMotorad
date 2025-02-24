@@ -83,7 +83,7 @@ const backendUrl = import.meta.env.VITE_Backend_URL
   }, [navigate, login, rememberMe]);
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-100">
+    <div className="h-screen flex items-center justify-center  ">
       <ToastContainer position="top-right" autoClose={3000} />
       <div className={`flex w-[900px] bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-700 ${isRegister ? "flex-row-reverse" : ""}`}>
         <div className="w-1/2 bg-gradient-to-r from-purple-400 to-indigo-500 flex flex-col items-center justify-center text-white p-10 rounded-l-2xl">
