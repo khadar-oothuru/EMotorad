@@ -66,7 +66,7 @@ const backendUrl = import.meta.env.VITE_Backend_URL;
           {users.map((user) => (
             <li
               key={user._id}
-              className="flex justify-between items-center mb-6 p-4 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-200 ease-in-out"
+              className="flex justify-between items-center mb-6 p-4 bg-gray-100/40  rounded-lg shadow-lg hover:shadow-2xl transition-all duration-200 ease-in-out"
             >
               <div>
                 <h3 className="text-lg font-semibold text-gray-800">{user.name}</h3>
@@ -94,7 +94,7 @@ const backendUrl = import.meta.env.VITE_Backend_URL;
 
       {/* Edit Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-gray-600/20 backdrop-blur-sm  flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96 space-y-6">
             <h3 className="text-xl font-semibold text-gray-800">Edit User</h3>
             <div className="space-y-4">
