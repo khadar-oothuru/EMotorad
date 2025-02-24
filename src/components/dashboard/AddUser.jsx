@@ -99,6 +99,7 @@ const backendUrl = import.meta.env.VITE_Backend_URL;
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   YouTube Link
                 </label>
+                
                 <input
                   type="text"
                   placeholder="youtube.com/username"
@@ -137,15 +138,17 @@ const AddUser = () => {
 
   return (
     <div className="max-w-md mx-auto p-5 relative flex justify-center items-center h-63">
-      <button
-        onClick={() => setIsModalOpen(true)}
-        className="group w-full h-full flex flex-col items-center justify-center border-2 border-dashed border-gray-300 hover:border-blue-500 rounded-2xl transition-all hover:bg-gray-50"
-      >
-        <PlusCircle className="w-12 h-12 text-gray-400 group-hover:text-blue-500 mb-3 transition-colors" />
-        <span className="text-gray-500 group-hover:text-blue-500 font-medium transition-colors">
-          Add New Profile
-        </span>
-      </button>
+   <button
+  onClick={() => setIsModalOpen(true)}
+  className="group w-full h-full flex flex-col items-center justify-center border-2 border-black-100 hover:border-white-500 rounded-2xl transition-all hover:bg-transparent shadow-md hover:shadow-[0_0_15px_2px_rgba(255,0,0,0.5),0_0_30px_3px_rgba(0,255,0,0.5),0_0_45px_4px_rgba(0,0,255,0.5)]"
+>
+  <PlusCircle className="w-12 h-12 text-gray-400 group-hover:text-dark-500 mb-3 transition-colors" />
+  <span className="text-gray-500 group-hover:text-dark-500 font-medium transition-colors">
+    Add New Profile
+  </span>
+</button>
+
+
 
       {isModalOpen && <AddUserModal onClose={() => setIsModalOpen(false)} />}
     </div>
