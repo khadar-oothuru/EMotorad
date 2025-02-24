@@ -34,7 +34,7 @@ const backendUrl = import.meta.env.VITE_Backend_URL;
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-100/50 backdrop-blur-sm">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-100/10 backdrop-blur-sm">
       <div className="bg-white p-6 rounded-xl shadow-xl w-96 relative">
         {/* Close Button */}
         <button
@@ -99,7 +99,6 @@ const backendUrl = import.meta.env.VITE_Backend_URL;
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   YouTube Link
                 </label>
-                
                 <input
                   type="text"
                   placeholder="youtube.com/username"
