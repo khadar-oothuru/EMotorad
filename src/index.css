@@ -2,25 +2,13 @@
 
 body {
     background: linear-gradient(135deg, #b8fba4, #e9c881, rgb(148, 232, 169), #9bbbf2);
-    /* background: linear-gradient(135deg, #000000, #000000, rgb(0, 0, 0), #000000); */
-
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    /* min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
-
-p {
     font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    /* color: #444; */
-} 
+}
