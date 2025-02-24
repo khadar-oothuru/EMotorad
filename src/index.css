@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 body {
-    background: linear-gradient(135deg, #a4f2fb, #c2e9fb, #ffbaed, #c2d5f7);
+    background: linear-gradient(135deg, #b8fba4, #e9c881, rgb(148, 232, 169), #9bbbf2);
+    /* background: linear-gradient(135deg, #000000, #000000, rgb(0, 0, 0), #000000); */
+
     font-family: 'Poppins', sans-serif;
     color: #333;
     /* min-height: 100vh;

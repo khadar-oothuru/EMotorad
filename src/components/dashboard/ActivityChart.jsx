@@ -16,6 +16,9 @@ const ActivityChart = () => {
     { name: "Week 2", Guest: 400, User: 350 },
     { name: "Week 3", Guest: 200, User: 100 },
     { name: "Week 4", Guest: 350, User: 400 },
+    { name: "Week 5", Guest: 250, User: 700 },
+    { name: "Week 6", Guest: 300, User: 500 },
+    { name: "Week 7", Guest: 350, User: 400 },
   ];
 
   return (
