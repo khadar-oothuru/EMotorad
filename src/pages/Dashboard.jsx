@@ -15,7 +15,7 @@ const Dashboard = () => {
         <StatsCards />
 
         {/* Activity Chart */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-5">
           <ActivityChart />
         </div>
 

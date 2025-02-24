@@ -136,7 +136,7 @@ const AddUser = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="max-w-md mx-auto p-5 relative flex justify-center items-center h-63">
+    <div className="max-w-md mx-auto p-1 relative flex justify-center items-center h-61">
    <button
   onClick={() => setIsModalOpen(true)}
   className="group w-full h-full flex flex-col items-center justify-center border-2 border-black-100 hover:border-white-500 rounded-2xl transition-all hover:bg-transparent shadow-md hover:shadow-[0_0_15px_2px_rgba(255,0,0,0.5),0_0_30px_3px_rgba(0,255,0,0.5),0_0_45px_4px_rgba(0,0,255,0.5)]"

@@ -22,7 +22,10 @@ const StatsCards = () => {
               <IconComponent size={24} className={stat.color} />
             </div>
             <div>
-              <p className={`${stat.color} text-xs font-medium`}>{stat.title}</p>
+            <p className={`font-medium text-xs ${stat.color} !important`}>{stat.title}</p>
+
+
+
               <h3 className="text-2xl font-semibold text-gray-200">{stat.value}</h3>
             </div>
           </div>
