@@ -9,7 +9,7 @@ const AddUserModal = ({ onClose }) => {
   const [name, setName] = useState("");
   const [instagram, setInstagram] = useState("");
   const [youtube, setYoutube] = useState("");
-
+const backendUrl = import.meta.env.VITE_Backend_URL;
   const handleAddUser = async () => {
     if (!name.trim()) {
       toast.error("Name is required!");
@@ -17,7 +17,7 @@ const AddUserModal = ({ onClose }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users", {
+      const response = await axios.post(`${backendUrl}/api/users`, {
         name,
         instagram,
         youtube,

@@ -8,11 +8,11 @@ const Users = () => {
   const [users, setUsers] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editUser, setEditUser] = useState({ name: "", instagram: "", youtube: "" });
-
+const backendUrl = import.meta.env.VITE_Backend_URL;
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/users");
+        const res = await axios.get(`${backendUrl}/api/users`);
         setUsers(res.data);
       } catch (error) {
         console.error("Error fetching users", error);
@@ -24,7 +24,7 @@ const Users = () => {
 
   const handleDeleteUser = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${userId}`);
+      await axios.delete(`${backendUrl}/api/users/${userId}`);
       setUsers(users.filter((user) => user._id !== userId));
       toast.success("User deleted successfully!");
     } catch (error) {
@@ -36,7 +36,7 @@ const Users = () => {
   const handleEditUser = async () => {
     try {
       const updatedUser = { ...editUser };
-      await axios.put(`http://localhost:5000/api/users/${editUser._id}`, updatedUser);
+      await axios.put(`${backendUrl}/api/users/${editUser._id}`, updatedUser);
       setUsers(users.map((user) => (user._id === editUser._id ? updatedUser : user)));
       setIsModalOpen(false);
       toast.success("User updated successfully!");
